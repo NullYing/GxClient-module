@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{97486EE2-814D-430D-90BB-17063D24382A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENSRC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENSRC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="basefuntion\AdminRun.cpp" />
+    <ClCompile Include="basefuntion\aes.cpp" />
+    <ClCompile Include="basefuntion\BASE64.cpp" />
+    <ClCompile Include="basefuntion\BaseFuntion.cpp" />
+    <ClCompile Include="basefuntion\dllmain.cpp" />
+    <ClCompile Include="basefuntion\Encoding.cpp" />
+    <ClCompile Include="basefuntion\md5.cpp" />
+    <ClCompile Include="basefuntion\network.cpp" />
+    <ClCompile Include="basefuntion\rc4.cpp" />
+    <ClCompile Include="basefuntion\stdafx.cpp" />
+    <ClCompile Include="basefuntion\ZTECheckCode.cpp" />
+    <ClCompile Include="http\dllmain.cpp" />
+    <ClCompile Include="http\Encoding.cpp" />
+    <ClCompile Include="http\hmac_sha1.cpp" />
+    <ClCompile Include="http\http.cpp" />
+    <ClCompile Include="http\stdafx.cpp" />
+    <ClCompile Include="http\tcp_connect.cpp" />
+    <ClCompile Include="logger\dllmain.cpp" />
+    <ClCompile Include="logger\Logger.cpp" />
+    <ClCompile Include="logger\port\elog_port.cpp" />
+    <ClCompile Include="logger\src\elog.cpp" />
+    <ClCompile Include="logger\src\elog_utils.cpp" />
+    <ClCompile Include="logger\stdafx.cpp" />
+    <ClCompile Include="weather\dllmain.cpp" />
+    <ClCompile Include="weather\stdafx.cpp" />
+    <ClCompile Include="weather\Weather.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api\BaseFuntion.h" />
+    <ClInclude Include="api\elog.h" />
+    <ClInclude Include="api\elog_cfg.h" />
+    <ClInclude Include="api\http.h" />
+    <ClInclude Include="api\Logger.h" />
+    <ClInclude Include="api\tcp_connect.h" />
+    <ClInclude Include="api\WeatherAPI.h" />
+    <ClInclude Include="basefuntion\BASE64.h" />
+    <ClInclude Include="basefuntion\global.h" />
+    <ClInclude Include="basefuntion\resource.h" />
+    <ClInclude Include="basefuntion\stdafx.h" />
+    <ClInclude Include="basefuntion\targetver.h" />
+    <ClInclude Include="basefuntion\ZTECheckCode.h" />
+    <ClInclude Include="http\curl\curl.h" />
+    <ClInclude Include="http\curl\curlbuild.h" />
+    <ClInclude Include="http\curl\curlrules.h" />
+    <ClInclude Include="http\curl\curlver.h" />
+    <ClInclude Include="http\curl\easy.h" />
+    <ClInclude Include="http\curl\mprintf.h" />
+    <ClInclude Include="http\curl\multi.h" />
+    <ClInclude Include="http\curl\stdcheaders.h" />
+    <ClInclude Include="http\curl\typecheck-gcc.h" />
+    <ClInclude Include="http\resource.h" />
+    <ClInclude Include="http\stdafx.h" />
+    <ClInclude Include="http\targetver.h" />
+    <ClInclude Include="logger\resource.h" />
+    <ClInclude Include="logger\stdafx.h" />
+    <ClInclude Include="logger\targetver.h" />
+    <ClInclude Include="weather\resource.h" />
+    <ClInclude Include="weather\stdafx.h" />
+    <ClInclude Include="weather\targetver.h" />
+    <ClInclude Include="weather\Weather.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="basefuntion\BaseFuntion.rc" />
+    <ResourceCompile Include="http\http.rc" />
+    <ResourceCompile Include="logger\Logger.rc" />
+    <ResourceCompile Include="weather\Weather.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
