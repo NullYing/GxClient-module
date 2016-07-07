@@ -156,8 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\API\Logger.h" />
-    <ClInclude Include="..\API\TYAuth.h" />
-    <ClInclude Include="..\API\ZTEAuth.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>

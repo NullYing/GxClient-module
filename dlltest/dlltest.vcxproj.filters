@@ -24,13 +24,7 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\API\ZTEAuth.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="..\API\Logger.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\API\TYAuth.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
