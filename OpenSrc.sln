@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseFuntion", "BaseFuntion\BaseFuntion.vcxproj", "{3BBC8DC0-57C5-4B85-97E0-C26B47F73735}"
 EndProject
@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Weather", "Weather\Weather.
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dlltest", "dlltest\dlltest.vcxproj", "{9617EF45-8F74-47D7-9973-CD59E8EC68F9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReWriteVer", "ReWriteVer\ReWriteVer.vcxproj", "{8F0D0741-CB69-4C10-8F52-177461F8824B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +70,14 @@ Global
 		{9617EF45-8F74-47D7-9973-CD59E8EC68F9}.Release|x64.Build.0 = Release|x64
 		{9617EF45-8F74-47D7-9973-CD59E8EC68F9}.Release|x86.ActiveCfg = Release|Win32
 		{9617EF45-8F74-47D7-9973-CD59E8EC68F9}.Release|x86.Build.0 = Release|Win32
+		{8F0D0741-CB69-4C10-8F52-177461F8824B}.Debug|x64.ActiveCfg = Debug|x64
+		{8F0D0741-CB69-4C10-8F52-177461F8824B}.Debug|x64.Build.0 = Debug|x64
+		{8F0D0741-CB69-4C10-8F52-177461F8824B}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F0D0741-CB69-4C10-8F52-177461F8824B}.Debug|x86.Build.0 = Debug|Win32
+		{8F0D0741-CB69-4C10-8F52-177461F8824B}.Release|x64.ActiveCfg = Release|x64
+		{8F0D0741-CB69-4C10-8F52-177461F8824B}.Release|x64.Build.0 = Release|x64
+		{8F0D0741-CB69-4C10-8F52-177461F8824B}.Release|x86.ActiveCfg = Release|Win32
+		{8F0D0741-CB69-4C10-8F52-177461F8824B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
